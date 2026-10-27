@@ -1,12 +1,10 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import AboutSection from "@/components/AboutSection";
-import ServicesSection from "@/components/ServicesSection";
-import BridalHennaSection from "@/components/BridalHennaSection";
-import AestheticsPRPSection from "@/components/AestheticsPRPSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import BookingSection from "@/components/BookingSection";
-import FaqSection from "@/components/FaqSection";
+import HeroSlider from "@/components/HeroSlider";
+import Introduction from "@/components/Introduction";
+import FeaturedServices from "@/components/FeaturedServices";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import CTABanner from "@/components/CTABanner";
+import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -14,14 +12,12 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-1">
-        <Hero />
-        <AboutSection />
-        <ServicesSection />
-        <BridalHennaSection />
-        <AestheticsPRPSection />
-        <TestimonialsSection />
-        <BookingSection />
-        <FaqSection />
+        <HeroSlider />
+        <Introduction />
+        <FeaturedServices />
+        <WhyChooseUs />
+        <CTABanner />
+        <ContactSection />
       </main>
       <Footer />
     </div>
