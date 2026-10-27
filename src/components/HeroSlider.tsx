@@ -61,7 +61,7 @@ export default function HeroSlider() {
 
   return (
     <section
-      className="relative w-full h-[520px] sm:h-[600px] lg:h-[660px] overflow-hidden bg-slate-900"
+      className="relative w-full h-[540px] sm:h-[620px] lg:h-[680px] overflow-hidden bg-slate-950"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onFocus={() => setPaused(true)}
@@ -80,25 +80,27 @@ export default function HeroSlider() {
         sizes="100vw"
       />
 
-      {/* Solid Dark Tint Overlay — STRICTLY NO GRADIENT */}
-      <div className="absolute inset-0 bg-slate-950/65" />
+      {/* Solid High-Contrast Dark Tint Overlay — Guarantees 100% Text Legibility */}
+      <div className="absolute inset-0 bg-slate-950/75" />
 
-      {/* Content Container */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="max-w-4xl mx-auto px-6 text-center text-white space-y-6">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-[#1a237e] text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-[#d81b60]" />
-            <span>{slide.badge}</span>
+      {/* Content Container with High-Contrast Box */}
+      <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6">
+        <div className="max-w-4xl w-full mx-auto px-6 py-8 sm:px-10 sm:py-10 text-center text-white space-y-6 bg-slate-950/70 border border-white/20 rounded-2xl shadow-2xl backdrop-blur-xs">
+          {/* Solid White Badge for 100% Sharp Contrast */}
+          <div>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-[#1a237e] text-xs font-bold uppercase tracking-wider shadow-md">
+              <Sparkles className="w-3.5 h-3.5 text-[#d81b60]" />
+              <span>{slide.badge}</span>
+            </div>
           </div>
 
-          {/* Heading */}
-          <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+          {/* Headline with High-Contrast Text & Drop Shadow */}
+          <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight [text-shadow:_0_2px_12px_rgba(0,0,0,0.9)]">
             {slide.headline}
           </h1>
 
-          {/* Subtext */}
-          <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto leading-relaxed">
+          {/* Subtext with High-Contrast Crisp Color */}
+          <p className="text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed [text-shadow:_0_1px_6px_rgba(0,0,0,0.85)] font-medium">
             {slide.subtext}
           </p>
 
@@ -106,14 +108,14 @@ export default function HeroSlider() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <a
               href="#contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#d81b60] hover:bg-[#ad1457] text-white font-semibold text-sm rounded-lg transition-colors cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#d81b60] hover:bg-[#ad1457] text-white font-semibold text-sm rounded-lg transition-colors cursor-pointer shadow-lg"
             >
               <Calendar className="w-4 h-4" />
               <span>Book Appointment</span>
             </a>
             <a
               href="#services"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#1a237e] hover:bg-[#121858] text-white font-semibold text-sm rounded-lg border border-white/20 transition-colors cursor-pointer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#1a237e] hover:bg-[#121858] text-white font-semibold text-sm rounded-lg border border-white/30 transition-colors cursor-pointer shadow-lg"
             >
               <span>Explore Treatments</span>
               <ArrowRight className="w-4 h-4" />
@@ -127,7 +129,7 @@ export default function HeroSlider() {
         type="button"
         onClick={prev}
         aria-label="Previous slide"
-        className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer"
+        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer border border-white/20 shadow-md"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
@@ -135,13 +137,13 @@ export default function HeroSlider() {
         type="button"
         onClick={next}
         aria-label="Next slide"
-        className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer"
+        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer border border-white/20 shadow-md"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2.5">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2.5">
         {slides.map((_, idx) => (
           <button
             key={idx}
@@ -149,7 +151,7 @@ export default function HeroSlider() {
             onClick={() => setCurrent(idx)}
             aria-label={`Go to slide ${idx + 1}`}
             className={`h-2.5 rounded-full transition-all cursor-pointer ${
-              idx === current ? "w-8 bg-[#d81b60]" : "w-2.5 bg-white/60 hover:bg-white"
+              idx === current ? "w-8 bg-[#d81b60]" : "w-2.5 bg-white/70 hover:bg-white"
             }`}
           />
         ))}
