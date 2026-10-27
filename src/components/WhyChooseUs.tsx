@@ -1,85 +1,86 @@
 import {
-  ShieldCheck,
   Heart,
+  ShieldCheck,
   Sparkles,
-  Clock,
-  Award,
   Users,
+  Award,
+  Flower2,
 } from "lucide-react";
 
 const reasons = [
   {
     icon: Heart,
-    title: "Personalised Care",
+    title: "Personalised Approach",
     description:
-      "Every treatment is tailored to your individual needs, preferences, and beauty goals.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Hygienic & Safe",
-    description:
-      "We maintain the highest standards of cleanliness and use premium, skin-friendly products.",
+      "Every treatment is individually tailored to your unique beauty goals, facial structure, skin profile, and personal preferences.",
   },
   {
     icon: Award,
-    title: "Experienced Team",
+    title: "Attention to Detail",
     description:
-      "Our skilled stylists and therapists bring years of expertise across hair, beauty, and aesthetics.",
-  },
-  {
-    icon: Sparkles,
-    title: "Premium Products",
-    description:
-      "We use only professional-grade products that nourish and protect your hair and skin.",
-  },
-  {
-    icon: Clock,
-    title: "Convenient Hours",
-    description:
-      "Open 7 days a week with flexible appointment times to suit your schedule.",
+      "From delicate bridal henna strokes to microscopic PRP precision and bespoke hair cuts, perfection is in every single step.",
   },
   {
     icon: Users,
-    title: "Welcoming Environment",
+    title: "Welcoming Sanctuary",
     description:
-      "A warm, relaxing salon where every client is valued, listened to, and cared for.",
+      "A soothing, comfortable salon where every client is valued, listened to, and leaves feeling refreshed, radiant, and confident.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Certified Practitioners",
+    description:
+      "Experienced hair stylists, bridal makeup artists, and certified aesthetic therapists practicing strict medical-grade hygiene.",
+  },
+  {
+    icon: Flower2,
+    title: "100% Organic Henna & Care",
+    description:
+      "We strictly use pure, freshly mixed natural henna cones free of chemical dyes or PPD, plus nourishing professional haircare.",
+  },
+  {
+    icon: Sparkles,
+    title: "Inspiring Confidence",
+    description:
+      "Our mission goes beyond external appearance — we celebrate and enhance your natural beauty so you look and feel your very best.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="section-padding bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="why-us" className="section-padding bg-white border-b border-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-sm font-semibold text-pink-500 uppercase tracking-widest mb-3">
-            Why Fami Salon
-          </p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Choose Us
+        <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#e8eaf6] border border-[#c5cae9] text-xs font-bold text-[#1a237e]">
+            <Sparkles className="w-3.5 h-3.5 text-[#d81b60]" />
+            <span>The Fami Salon Difference</span>
+          </div>
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1a237e] tracking-tight">
+            Why Choose Fami Hair &amp; Beauty Salon
           </h2>
-          <p className="text-muted">
-            We believe every client deserves to feel valued and confident.
-            Here&apos;s what sets us apart.
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+            We believe every client deserves an exceptional experience rooted in genuine care,
+            unrivalled expertise, and lasting results.
           </p>
         </div>
 
-        {/* Cards grid */}
+        {/* 6 Grid Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reasons.map((reason) => {
             const Icon = reason.icon;
             return (
               <div
                 key={reason.title}
-                className="text-center p-8 rounded-xl border border-border hover:border-blue-200 hover:shadow-md transition-all"
+                className="bg-[#f8f9fc] rounded-2xl p-8 border border-slate-200 hover:border-[#1a237e] hover:bg-white hover:shadow-md transition-all text-left space-y-4"
               >
-                <div className="w-14 h-14 mx-auto mb-5 flex items-center justify-center rounded-full bg-blue-50 text-blue-600">
-                  <Icon className="w-6 h-6" />
+                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#1a237e] text-white">
+                  <Icon className="w-6 h-6 text-pink-300" />
                 </div>
-                <h3 className="font-heading text-lg font-bold text-foreground mb-2">
+                <h3 className="font-heading text-xl font-bold text-slate-900 leading-snug">
                   {reason.title}
                 </h3>
-                <p className="text-sm text-muted leading-relaxed">
+                <p className="text-sm text-slate-600 leading-relaxed">
                   {reason.description}
                 </p>
               </div>
