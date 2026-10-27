@@ -6,7 +6,7 @@ export default function CTABanner() {
     <section className="relative py-20 lg:py-24 overflow-hidden bg-[#1a237e]">
       {/* Background Image with dark solid overlay */}
       <Image
-        src="https://images.unsplash.com/photo-1521590832167-7228f4bbc82c?w=1600&h=700&fit=crop"
+        src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&h=700&fit=crop"
         alt="Stylist at work in modern luxury salon"
         fill
         className="object-cover opacity-20"
@@ -15,12 +15,12 @@ export default function CTABanner() {
 
       {/* Content Container */}
       <div className="relative max-w-4xl mx-auto px-6 text-center text-white space-y-6">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-[#1a237e] text-xs font-bold uppercase tracking-wider">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-[#1a237e] text-xs font-bold uppercase tracking-wider shadow-sm">
           <Sparkles className="w-3.5 h-3.5 text-[#d81b60]" />
           <span>Fami Hair &amp; Beauty Salon</span>
         </div>
 
-        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight">
+        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight [text-shadow:_0_2px_12px_rgba(0,0,0,0.9)]">
           Enhancing Your Beauty, Inspiring Your Confidence
         </h2>
 

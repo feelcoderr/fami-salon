@@ -80,13 +80,13 @@ export default function HeroSlider() {
         sizes="100vw"
       />
 
-      {/* Solid High-Contrast Dark Tint Overlay — Guarantees 100% Text Legibility */}
-      <div className="absolute inset-0 bg-slate-950/75" />
+      {/* Solid High-Contrast Dark Tint Overlay */}
+      <div className="absolute inset-0 bg-slate-950/60" />
 
-      {/* Content Container with High-Contrast Box */}
-      <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6">
-        <div className="max-w-4xl w-full mx-auto px-6 py-8 sm:px-10 sm:py-10 text-center text-white space-y-6 bg-slate-950/70 border border-white/20 rounded-2xl shadow-2xl backdrop-blur-xs">
-          {/* Solid White Badge for 100% Sharp Contrast */}
+      {/* Content Container (Open, Clean & Spacious) */}
+      <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 z-10">
+        <div className="max-w-4xl w-full mx-auto px-6 py-8 text-center text-white space-y-6">
+          {/* Solid White Badge */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white text-[#1a237e] text-xs font-bold uppercase tracking-wider shadow-md">
               <Sparkles className="w-3.5 h-3.5 text-[#d81b60]" />
@@ -94,13 +94,13 @@ export default function HeroSlider() {
             </div>
           </div>
 
-          {/* Headline with High-Contrast Text & Drop Shadow */}
-          <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight [text-shadow:_0_2px_12px_rgba(0,0,0,0.9)]">
+          {/* Headline with High-Contrast White Text */}
+          <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight [text-shadow:_0_2px_14px_rgba(0,0,0,0.95)]">
             {slide.headline}
           </h1>
 
-          {/* Subtext with High-Contrast Crisp Color */}
-          <p className="text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed [text-shadow:_0_1px_6px_rgba(0,0,0,0.85)] font-medium">
+          {/* Subtext with High-Contrast Text */}
+          <p className="text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed [text-shadow:_0_1px_8px_rgba(0,0,0,0.9)] font-medium">
             {slide.subtext}
           </p>
 
@@ -115,7 +115,7 @@ export default function HeroSlider() {
             </a>
             <a
               href="#services"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#1a237e] hover:bg-[#121858] text-white font-semibold text-sm rounded-lg border border-white/30 transition-colors cursor-pointer shadow-lg"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#1a237e] hover:bg-[#121858] text-white font-semibold text-sm rounded-lg border border-white/40 transition-colors cursor-pointer shadow-lg"
             >
               <span>Explore Treatments</span>
               <ArrowRight className="w-4 h-4" />

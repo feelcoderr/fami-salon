@@ -48,7 +48,7 @@ const services = [
     description:
       "Deep cleansing facials, hydration therapies, and glow treatments customized for your skin’s vitality and youthfulness.",
     image:
-      "https://images.unsplash.com/photo-1512290900672-1f02e9ad0ba8?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&h=400&fit=crop",
   },
   {
     title: "Advanced Aesthetic Services",
@@ -64,7 +64,7 @@ const services = [
     description:
       "Autologous growth factor therapy for hair thinning & scalp restoration, and PRP vampire facials for intense collagen renewal.",
     image:
-      "https://images.unsplash.com/photo-1629397685944-7073b8002da5?w=600&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=400&fit=crop",
   },
 ];
 
