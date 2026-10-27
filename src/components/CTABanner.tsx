@@ -20,7 +20,10 @@ export default function CTABanner() {
           <span>Fami Hair &amp; Beauty Salon</span>
         </div>
 
-        <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-tight [text-shadow:_0_2px_12px_rgba(0,0,0,0.9)]">
+        <h2
+          style={{ color: "#ffffff" }}
+          className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight !text-white leading-tight [text-shadow:_0_2px_12px_rgba(0,0,0,0.9)]"
+        >
           Enhancing Your Beauty, Inspiring Your Confidence
         </h2>
 

@@ -95,12 +95,18 @@ export default function HeroSlider() {
           </div>
 
           {/* Headline with High-Contrast White Text */}
-          <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight [text-shadow:_0_2px_14px_rgba(0,0,0,0.95)]">
+          <h1
+            style={{ color: "#ffffff" }}
+            className="font-heading text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight !text-white leading-tight [text-shadow:_0_2px_14px_rgba(0,0,0,0.95)]"
+          >
             {slide.headline}
           </h1>
 
           {/* Subtext with High-Contrast Text */}
-          <p className="text-base sm:text-lg text-slate-100 max-w-2xl mx-auto leading-relaxed [text-shadow:_0_1px_8px_rgba(0,0,0,0.9)] font-medium">
+          <p
+            style={{ color: "#f8fafc" }}
+            className="text-base sm:text-lg !text-slate-100 max-w-2xl mx-auto leading-relaxed [text-shadow:_0_1px_8px_rgba(0,0,0,0.9)] font-medium"
+          >
             {slide.subtext}
           </p>
 

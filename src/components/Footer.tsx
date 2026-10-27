@@ -22,7 +22,10 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <span className="font-heading text-xl font-bold text-white block leading-tight">
+                <span
+                  style={{ color: "#ffffff" }}
+                  className="font-heading text-xl font-bold !text-white block leading-tight"
+                >
                   FAMI
                 </span>
                 <span className="text-[11px] font-semibold uppercase tracking-widest text-[#d81b60] block">
@@ -70,7 +73,10 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-heading text-base font-bold text-white border-b border-white/15 pb-2">
+            <h4
+              style={{ color: "#ffffff" }}
+              className="font-heading text-base font-bold !text-white border-b border-white/20 pb-2"
+            >
               Our Treatments
             </h4>
             <ul className="space-y-2 text-sm text-slate-300">
@@ -109,7 +115,10 @@ export default function Footer() {
 
           {/* Opening Hours */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="font-heading text-base font-bold text-white border-b border-white/15 pb-2">
+            <h4
+              style={{ color: "#ffffff" }}
+              className="font-heading text-base font-bold !text-white border-b border-white/20 pb-2"
+            >
               Opening Hours
             </h4>
             <div className="space-y-3 text-sm text-slate-300">
@@ -127,7 +136,10 @@ export default function Footer() {
 
           {/* Contact Details */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="font-heading text-base font-bold text-white border-b border-white/15 pb-2">
+            <h4
+              style={{ color: "#ffffff" }}
+              className="font-heading text-base font-bold !text-white border-b border-white/20 pb-2"
+            >
               Contact &amp; Location
             </h4>
             <div className="space-y-3 text-sm text-slate-300">
