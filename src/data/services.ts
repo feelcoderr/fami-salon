@@ -346,7 +346,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Laser hair removal at Fami Salon: IPL and SHR technology for face, arms, legs, underarms, bikini, and full body with affordable per-session and package pricing.",
     icon: "Zap",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Laser Hair Removal — IPL",
@@ -407,7 +407,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Advanced skin treatments at Fami Salon: microneedling, radiofrequency face and body, PRP vampire facial, PRP hair loss treatment, BB Glow, and acid peeling.",
     icon: "Activity",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Microneedling",
@@ -464,7 +464,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Microdermabrasion, Hydra Facial, and BioRepeel at Fami Salon: tester facials, course packages, hydra facial with LED, and BioRepeel for face, neck, and body.",
     icon: "Droplets",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Microdermabrasion for Face",

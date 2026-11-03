@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import PriceTable from "@/components/PriceTable";
 import CTABanner from "@/components/CTABanner";
-import Accreditations from "@/components/Accreditations";
 import { getServiceBySlug, getAllServiceSlugs, serviceCategories } from "@/data/services";
 import { Calendar, Phone, CheckCircle2, ShieldCheck, Sparkles, ChevronRight } from "lucide-react";
 
@@ -94,7 +93,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                   <div className="space-y-1 text-xs sm:text-sm text-slate-700">
                     <p className="font-bold text-slate-900">Professional Salon Standard</p>
                     <p className="leading-relaxed">
-                      All treatments are conducted by fully accredited specialists (VTCT, iTEC, ABT) using sterilized medical-grade instruments, hypoallergenic products, and client consultation records.
+                      All treatments are conducted by fully qualified specialists using sterilized medical-grade instruments, hypoallergenic products, and personalized consultation records.
                     </p>
                   </div>
                 </div>
@@ -186,9 +185,6 @@ export default async function ServiceDetailPage({ params }: Props) {
             </div>
           </div>
         </section>
-
-        {/* Accreditations */}
-        <Accreditations />
 
         {/* CTA Banner */}
         <CTABanner />

@@ -140,8 +140,8 @@ export default function Introduction() {
               <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center gap-3 shadow-xs">
                 <Award className="w-5 h-5 text-[#d81b60] shrink-0" />
                 <div>
-                  <p className="text-xs font-bold text-slate-900 leading-tight">Fully Accredited</p>
-                  <p className="text-[11px] text-slate-500">VTCT &amp; iTEC Certified</p>
+                  <p className="text-xs font-bold text-slate-900 leading-tight">Certified Team</p>
+                  <p className="text-[11px] text-slate-500">Industry Qualified</p>
                 </div>
               </div>
             </div>

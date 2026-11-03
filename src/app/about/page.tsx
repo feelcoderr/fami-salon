@@ -4,7 +4,6 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
-import Accreditations from "@/components/Accreditations";
 import CTABanner from "@/components/CTABanner";
 import { CheckCircle2, Award, Users, Heart, Sparkles, ChevronRight, MapPin, Phone, Mail } from "lucide-react";
 
@@ -53,9 +52,9 @@ const salonValues = [
     icon: Heart,
   },
   {
-    title: "Accredited Excellence",
+    title: "Certified Excellence",
     description:
-      "VTCT, iTEC, ABT, and Qualifi certified practitioners delivering treatments to the highest professional and medical hygiene standards.",
+      "Fully certified practitioners delivering treatments to the highest professional, hygienic, and client safety standards.",
     icon: Award,
   },
   {
@@ -139,7 +138,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <span className="px-3 py-1 bg-[#1a237e] text-white text-[11px] font-bold rounded-full">
-                    VTCT / iTEC
+                    Qualified Specialists
                   </span>
                 </div>
               </div>
@@ -265,10 +264,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Section 4: Accreditations */}
-        <Accreditations />
-
-        {/* Section 5: CTA Banner */}
+        {/* Section 4: CTA Banner */}
         <CTABanner />
       </main>
       <Footer />

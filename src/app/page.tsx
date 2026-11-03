@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import HeroSlider from "@/components/HeroSlider";
-import Accreditations from "@/components/Accreditations";
 import Introduction from "@/components/Introduction";
 import FeaturedServices from "@/components/FeaturedServices";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -14,7 +13,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <HeroSlider />
-        <Accreditations />
         <Introduction />
         <FeaturedServices />
         <WhyChooseUs />

@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import ServiceCategoryCard from "@/components/ServiceCategoryCard";
 import CTABanner from "@/components/CTABanner";
-import Accreditations from "@/components/Accreditations";
 import { serviceCategories } from "@/data/services";
 import { Sparkles, Calendar, Phone, CheckCircle2, ShieldCheck, Clock } from "lucide-react";
 
@@ -136,9 +135,6 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
-
-        {/* Accreditations Bar */}
-        <Accreditations />
 
         {/* CTA Banner */}
         <CTABanner />

@@ -38,9 +38,9 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Clock className="w-3.5 h-3.5 text-pink-300" />
             <span className="hidden sm:inline">
-              Mon – Sat: 9:30 AM – 6:30 PM &bull; Sun: 10:30 AM – 5:00 PM
+              Mon – Sat: 9:30 AM – 6:30 PM &bull; Sunday: Closed
             </span>
-            <span className="sm:hidden">Mon – Sun Appointments Available</span>
+            <span className="sm:hidden">Mon – Sat: 9:30 AM – 6:30 PM</span>
           </div>
           <a
             href="tel:+447000000000"

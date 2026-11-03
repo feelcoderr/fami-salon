@@ -4,7 +4,6 @@ import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
-import Accreditations from "@/components/Accreditations";
 import { serviceCategories } from "@/data/services";
 import {
   MapPin,
@@ -123,7 +122,7 @@ export default function ContactPage() {
                       <h4 className="font-bold text-slate-900 text-sm">Opening Hours</h4>
                       <div className="text-xs text-slate-600 mt-1 space-y-0.5">
                         <p><strong className="text-slate-800">Monday – Saturday:</strong> 9:30 AM – 6:30 PM</p>
-                        <p><strong className="text-slate-800">Sunday:</strong> 10:30 AM – 5:00 PM</p>
+                        <p><strong className="text-[#d81b60] font-semibold">Sunday:</strong> Closed</p>
                       </div>
                     </div>
                   </div>
@@ -302,9 +301,6 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-
-        {/* Accreditations */}
-        <Accreditations />
       </main>
       <Footer />
     </div>

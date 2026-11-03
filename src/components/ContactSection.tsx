@@ -116,7 +116,7 @@ export default function ContactSection() {
                     <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                       Mon – Sat: 9:30 AM – 6:30 PM
                       <br />
-                      Sunday: 10:30 AM – 5:00 PM
+                      <span className="text-[#d81b60] font-semibold">Sunday: Closed</span>
                     </p>
                   </div>
                 </div>
