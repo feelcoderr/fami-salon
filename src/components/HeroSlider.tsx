@@ -135,7 +135,7 @@ export default function HeroSlider() {
         type="button"
         onClick={prev}
         aria-label="Previous slide"
-        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer border border-white/20 shadow-md"
+        className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer border border-white/20 shadow-md"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
@@ -143,13 +143,13 @@ export default function HeroSlider() {
         type="button"
         onClick={next}
         aria-label="Next slide"
-        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer border border-white/20 shadow-md"
+        className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 flex items-center justify-center bg-white/20 hover:bg-[#1a237e] text-white rounded-full transition-colors cursor-pointer border border-white/20 shadow-md"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
 
       {/* Slide Indicators */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2.5">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5">
         {slides.map((_, idx) => (
           <button
             key={idx}
