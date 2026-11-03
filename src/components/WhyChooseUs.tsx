@@ -42,13 +42,16 @@ const reasons = [
     icon: Sparkles,
     title: "Inspiring Confidence",
     description:
-      "Our mission goes beyond external appearance — we celebrate and enhance your natural beauty so you look and feel your very best.",
+      "Our mission goes beyond external appearance. We celebrate and enhance your natural beauty so you look and feel your very best.",
   },
 ];
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="section-padding bg-white border-b border-slate-200">
+    <section
+      id="why-us"
+      className="section-padding bg-white border-b border-slate-200"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -60,8 +63,8 @@ export default function WhyChooseUs() {
             Why Choose Fami Hair &amp; Beauty Salon
           </h2>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            We believe every client deserves an exceptional experience rooted in genuine care,
-            unrivalled expertise, and lasting results.
+            We believe every client deserves an exceptional experience rooted in
+            genuine care, unrivalled expertise, and lasting results.
           </p>
         </div>
 

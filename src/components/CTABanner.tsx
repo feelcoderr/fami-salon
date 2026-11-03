@@ -28,8 +28,10 @@ export default function CTABanner() {
         </h2>
 
         <p className="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto leading-relaxed">
-          Whether you are visiting for a fresh new hairstyle, bridal make-up for your special day,
-          intricate henna designs, perfectly shaped eyebrows, smooth skin, or rejuvenating aesthetic &amp; PRP treatments — we look forward to welcoming you.
+          Whether you are visiting for a fresh new hairstyle, bridal make-up for
+          your special day, intricate henna designs, perfectly shaped eyebrows,
+          smooth skin, or rejuvenating aesthetic &amp; PRP treatments we look
+          forward to welcoming you.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">

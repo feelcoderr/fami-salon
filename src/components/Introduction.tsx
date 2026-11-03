@@ -2,7 +2,15 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { CheckCircle2, Sparkles, Heart, Users, Award, ShieldCheck, ChevronRight } from "lucide-react";
+import {
+  CheckCircle2,
+  Sparkles,
+  Heart,
+  Users,
+  Award,
+  ShieldCheck,
+  ChevronRight,
+} from "lucide-react";
 
 const teamPhotos = [
   {
@@ -17,14 +25,16 @@ const teamPhotos = [
     label: "Official Specialists",
     src: "/images/fami-team-studio.png",
     alt: "Fami Hair & Beauty Salon certified professional team",
-    caption: "Fully qualified experts in hair, makeup, henna & advanced aesthetics",
+    caption:
+      "Fully qualified experts in hair, makeup, henna & advanced aesthetics",
   },
   {
     id: "celebration",
     label: "Salon Culture",
     src: "/images/fami-team-salon.jpg",
     alt: "Fami Hair and Beauty Salon festive celebration and creative artistry",
-    caption: "A welcoming, joyful, and creative salon atmosphere for all clients",
+    caption:
+      "A welcoming, joyful, and creative salon atmosphere for all clients",
   },
 ];
 
@@ -43,9 +53,11 @@ export default function Introduction() {
   const [activePhoto, setActivePhoto] = useState(0);
 
   return (
-    <section id="about" className="py-16 sm:py-20 lg:py-24 bg-white border-b border-slate-200">
+    <section
+      id="about"
+      className="py-16 sm:py-20 lg:py-24 bg-white border-b border-slate-200"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header Pill */}
         <div className="flex flex-col items-center text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#fdf2f6] border border-[#f8bbd0] text-xs font-bold text-[#d81b60] uppercase tracking-wider mb-3">
@@ -56,13 +68,13 @@ export default function Introduction() {
             Welcome to Fami Hair &amp; Beauty Salon
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-600 max-w-2xl">
-            Where luxury expertise meets personalized care. Enhancing your beauty, inspiring your confidence.
+            Where luxury expertise meets personalized care. Enhancing your
+            beauty, inspiring your confidence.
           </p>
         </div>
 
         {/* Main Grid: Visual Team Showcase + Official Story */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-          
           {/* Left Column (5 cols): Authentic Team Showcase */}
           <div className="lg:col-span-5 space-y-6">
             {/* Interactive Photo Frame */}
@@ -80,7 +92,9 @@ export default function Introduction() {
 
               {/* Photo Caption Overlay */}
               <div className="p-3.5 bg-slate-900/90 text-white text-xs flex items-center justify-between border-t border-white/10">
-                <span className="truncate pr-2 font-medium">{teamPhotos[activePhoto].caption}</span>
+                <span className="truncate pr-2 font-medium">
+                  {teamPhotos[activePhoto].caption}
+                </span>
                 <span className="text-[10px] text-pink-300 font-bold uppercase shrink-0">
                   {activePhoto + 1} / {teamPhotos.length}
                 </span>
@@ -123,7 +137,8 @@ export default function Introduction() {
                   Farzana (Fami)
                 </h4>
                 <p className="text-xs text-slate-600 leading-snug">
-                  15+ years passionate experience dedicated to bespoke bridal glam, hair artistry, and clinical aesthetics.
+                  15+ years passionate experience dedicated to bespoke bridal
+                  glam, hair artistry, and clinical aesthetics.
                 </p>
               </div>
             </div>
@@ -133,15 +148,23 @@ export default function Introduction() {
               <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center gap-3 shadow-xs">
                 <Users className="w-5 h-5 text-[#1a237e] shrink-0" />
                 <div>
-                  <p className="text-xs font-bold text-slate-900 leading-tight">8+ Specialists</p>
-                  <p className="text-[11px] text-slate-500">Dedicated Experts</p>
+                  <p className="text-xs font-bold text-slate-900 leading-tight">
+                    8+ Specialists
+                  </p>
+                  <p className="text-[11px] text-slate-500">
+                    Dedicated Experts
+                  </p>
                 </div>
               </div>
               <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center gap-3 shadow-xs">
                 <Award className="w-5 h-5 text-[#d81b60] shrink-0" />
                 <div>
-                  <p className="text-xs font-bold text-slate-900 leading-tight">Certified Team</p>
-                  <p className="text-[11px] text-slate-500">Industry Qualified</p>
+                  <p className="text-xs font-bold text-slate-900 leading-tight">
+                    Certified Team
+                  </p>
+                  <p className="text-[11px] text-slate-500">
+                    Industry Qualified
+                  </p>
                 </div>
               </div>
             </div>
@@ -149,37 +172,72 @@ export default function Introduction() {
 
           {/* Right Column (7 cols): Full Official About Story */}
           <div className="lg:col-span-7 space-y-6">
-            
             {/* Opening Headline Callout */}
             <div className="p-5 rounded-2xl bg-[#fdf2f6] border border-[#f8bbd0]">
               <p className="text-base sm:text-lg font-semibold text-slate-900 leading-relaxed">
-                At <span className="text-[#1a237e] font-bold">Fami Hair &amp; Beauty Salon</span>, we believe that beauty is more than just appearance — it’s about confidence, self-care, and feeling your very best.
+                At{" "}
+                <span className="text-[#1a237e] font-bold">
+                  Fami Hair &amp; Beauty Salon
+                </span>
+                , we believe that beauty is more than just appearance it’s about
+                confidence, self-care, and feeling your very best.
               </p>
             </div>
 
             {/* Official Narrative Paragraphs */}
             <div className="space-y-4 text-slate-700 leading-relaxed text-sm sm:text-base">
               <p>
-                We are passionate about providing professional <strong className="text-slate-900 font-semibold">hair, beauty, make-up, bridal make-up, henna artistry, eyebrow services, hair removal, rejuvenation, advanced aesthetic, and PRP treatments</strong> in a welcoming, relaxing, and comfortable environment. Our aim is to help every client look and feel confident through personalised treatments tailored to their individual needs, preferences, and beauty goals.
+                We are passionate about providing professional{" "}
+                <strong className="text-slate-900 font-semibold">
+                  hair, beauty, make-up, bridal make-up, henna artistry, eyebrow
+                  services, hair removal, rejuvenation, advanced aesthetic, and
+                  PRP treatments
+                </strong>{" "}
+                in a welcoming, relaxing, and comfortable environment. Our aim
+                is to help every client look and feel confident through
+                personalised treatments tailored to their individual needs,
+                preferences, and beauty goals.
               </p>
 
               <p>
-                From beautiful hairstyles and expert hair care to <strong className="text-slate-900 font-semibold">professional make-up and stunning bridal make-up</strong>, our talented team is dedicated to helping you look and feel your best on every occasion, especially your special day. We also offer <strong className="text-slate-900 font-semibold">expert henna artistry, professional eyebrow shaping and styling, hair removal, rejuvenation treatments, advanced aesthetic services, and PRP treatments</strong> to enhance your natural beauty.
+                From beautiful hairstyles and expert hair care to{" "}
+                <strong className="text-slate-900 font-semibold">
+                  professional make-up and stunning bridal make-up
+                </strong>
+                , our talented team is dedicated to helping you look and feel
+                your best on every occasion, especially your special day. We
+                also offer{" "}
+                <strong className="text-slate-900 font-semibold">
+                  expert henna artistry, professional eyebrow shaping and
+                  styling, hair removal, rejuvenation treatments, advanced
+                  aesthetic services, and PRP treatments
+                </strong>{" "}
+                to enhance your natural beauty.
               </p>
 
               {/* Client Commitment Quote Box */}
               <div className="p-5 rounded-xl bg-[#f0f2fa] border-l-4 border-[#1a237e] text-slate-900 shadow-xs">
                 <p className="italic font-medium text-sm sm:text-base leading-relaxed text-[#0d1242]">
-                  &ldquo;We believe every client deserves to feel valued, listened to, and cared for. That’s why we focus on attention to detail, a personal approach, and creating an experience that leaves you feeling refreshed, confident, and radiant.&rdquo;
+                  &ldquo;We believe every client deserves to feel valued,
+                  listened to, and cared for. That’s why we focus on attention
+                  to detail, a personal approach, and creating an experience
+                  that leaves you feeling refreshed, confident, and
+                  radiant.&rdquo;
                 </p>
               </div>
 
               <p>
-                At Fami Hair &amp; Beauty Salon, your beauty journey is important to us. Whether you’re visiting for a fresh new hairstyle, bridal make-up for your special day, beautiful occasion make-up, intricate henna designs, perfectly shaped eyebrows, smooth skin through hair removal, or rejuvenating aesthetic treatments, we look forward to welcoming you.
+                At Fami Hair &amp; Beauty Salon, your beauty journey is
+                important to us. Whether you’re visiting for a fresh new
+                hairstyle, bridal make-up for your special day, beautiful
+                occasion make-up, intricate henna designs, perfectly shaped
+                eyebrows, smooth skin through hair removal, or rejuvenating
+                aesthetic treatments, we look forward to welcoming you.
               </p>
 
               <p className="font-heading text-lg font-bold text-[#d81b60] italic pt-1">
-                Fami Hair &amp; Beauty Salon — Enhancing Your Beauty, Inspiring Your Confidence.
+                Fami Hair &amp; Beauty Salon - Enhancing Your Beauty, Inspiring
+                Your Confidence.
               </p>
             </div>
 
@@ -217,10 +275,8 @@ export default function Introduction() {
                 <span>Explore Full Service Menu</span>
               </a>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

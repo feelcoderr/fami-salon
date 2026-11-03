@@ -5,7 +5,10 @@ import { Sparkles, ArrowRight } from "lucide-react";
 
 export default function FeaturedServices() {
   return (
-    <section id="services" className="section-padding bg-[#f8f9fc] border-b border-slate-200">
+    <section
+      id="services"
+      className="section-padding bg-[#f8f9fc] border-b border-slate-200"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 sm:mb-16 gap-6">
@@ -18,7 +21,9 @@ export default function FeaturedServices() {
               Our Featured Services &amp; Specialties
             </h2>
             <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
-              From signature hair transformations and bridal mehndi to medical-grade Hydra Facials and autologous PRP rejuvenation — explore our specialized beauty offerings.
+              From signature hair transformations and bridal mehndi to
+              medical-grade Hydra Facials and autologous PRP rejuvenation
+              explore our specialized beauty offerings.
             </p>
           </div>
 
@@ -55,7 +60,8 @@ export default function FeaturedServices() {
               Looking for customized combinations or bridal packages?
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 mt-0.5">
-              We create personalized packages tailored to your schedule, events, and skin goals.
+              We create personalized packages tailored to your schedule, events,
+              and skin goals.
             </p>
           </div>
           <Link

@@ -5,7 +5,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import CTABanner from "@/components/CTABanner";
-import { CheckCircle2, Award, Users, Heart, Sparkles, ChevronRight, MapPin, Phone, Mail } from "lucide-react";
+import {
+  CheckCircle2,
+  Award,
+  Users,
+  Heart,
+  Sparkles,
+  ChevronRight,
+  MapPin,
+  Phone,
+  Mail,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About Us | Fami Hair & Beauty Salon",
@@ -25,22 +35,27 @@ const teamMembers = [
     name: "Senior Hair Stylist",
     role: "Master Hair Artist",
     experience: "10+ Years Experience",
-    specialty: "Balayage, Precision Cuts, Colour Correction & Keratin Therapies",
-    image: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=750&fit=crop",
+    specialty:
+      "Balayage, Precision Cuts, Colour Correction & Keratin Therapies",
+    image:
+      "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=750&fit=crop",
   },
   {
     name: "Bridal & Henna Specialist",
     role: "Lead Make-Up & Henna Artist",
     experience: "8+ Years Experience",
-    specialty: "100% Organic Henna Artistry, Airbrush Bridal Glam & Occasion Styling",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=750&fit=crop",
+    specialty:
+      "100% Organic Henna Artistry, Airbrush Bridal Glam & Occasion Styling",
+    image:
+      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=750&fit=crop",
   },
   {
     name: "Clinical Aesthetician",
     role: "Skin Health Practitioner",
     experience: "7+ Years Experience",
     specialty: "BioRepeel, Hydra Facial, Microneedling & Laser Hair Removal",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=750&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=750&fit=crop",
   },
 ];
 
@@ -79,17 +94,13 @@ export default function AboutPage() {
         <PageHero
           title="About Fami Hair & Beauty Salon"
           subtitle="Discover our passion for empowering your confidence through personalized hair, beauty, and advanced aesthetic excellence."
-          breadcrumbs={[
-            { label: "Home", href: "/" },
-            { label: "About Us" },
-          ]}
+          breadcrumbs={[{ label: "Home", href: "/" }, { label: "About Us" }]}
         />
 
         {/* Section 1: Official Story & Studio Team Visuals */}
         <section className="py-16 sm:py-20 lg:py-24 bg-white border-b border-slate-200">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-              
               {/* Left Column: Full Authentic Team Imagery */}
               <div className="lg:col-span-5 space-y-6">
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-slate-200 shadow-lg">
@@ -102,8 +113,12 @@ export default function AboutPage() {
                     priority
                   />
                   <div className="absolute bottom-0 inset-x-0 p-3 bg-[#0d1242]/90 text-white text-xs flex justify-between items-center">
-                    <span className="font-medium">Our caring, qualified salon specialists</span>
-                    <span className="text-[10px] text-pink-300 font-bold uppercase">City Centre Studio</span>
+                    <span className="font-medium">
+                      Our caring, qualified salon specialists
+                    </span>
+                    <span className="text-[10px] text-pink-300 font-bold uppercase">
+                      City Centre Studio
+                    </span>
                   </div>
                 </div>
 
@@ -133,8 +148,12 @@ export default function AboutPage() {
                   <div className="flex items-center gap-3">
                     <Users className="w-8 h-8 text-[#1a237e]" />
                     <div>
-                      <p className="font-bold text-slate-900 text-sm">Dedicated Team of 8+</p>
-                      <p className="text-xs text-slate-600">Hair, Beauty &amp; Aesthetics Experts</p>
+                      <p className="font-bold text-slate-900 text-sm">
+                        Dedicated Team of 8+
+                      </p>
+                      <p className="text-xs text-slate-600">
+                        Hair, Beauty &amp; Aesthetics Experts
+                      </p>
                     </div>
                   </div>
                   <span className="px-3 py-1 bg-[#1a237e] text-white text-[11px] font-bold rounded-full">
@@ -156,29 +175,65 @@ export default function AboutPage() {
 
                 <div className="space-y-4 text-slate-700 leading-relaxed text-sm sm:text-base">
                   <p className="text-base sm:text-lg font-semibold text-slate-900">
-                    At <span className="text-[#1a237e]">Fami Hair &amp; Beauty Salon</span>, we believe that beauty is more than just appearance — it’s about confidence, self-care, and feeling your very best.
+                    At{" "}
+                    <span className="text-[#1a237e]">
+                      Fami Hair &amp; Beauty Salon
+                    </span>
+                    , we believe that beauty is more than just appearance it’s
+                    about confidence, self-care, and feeling your very best.
                   </p>
 
                   <p>
-                    We are passionate about providing professional <strong className="text-slate-900">hair, beauty, make-up, bridal make-up, henna artistry, eyebrow services, hair removal, rejuvenation, advanced aesthetic, and PRP treatments</strong> in a welcoming, relaxing, and comfortable environment. Our aim is to help every client look and feel confident through personalised treatments tailored to their individual needs, preferences, and beauty goals.
+                    We are passionate about providing professional{" "}
+                    <strong className="text-slate-900">
+                      hair, beauty, make-up, bridal make-up, henna artistry,
+                      eyebrow services, hair removal, rejuvenation, advanced
+                      aesthetic, and PRP treatments
+                    </strong>{" "}
+                    in a welcoming, relaxing, and comfortable environment. Our
+                    aim is to help every client look and feel confident through
+                    personalised treatments tailored to their individual needs,
+                    preferences, and beauty goals.
                   </p>
 
                   <p>
-                    From beautiful hairstyles and expert hair care to <strong className="text-slate-900">professional make-up and stunning bridal make-up</strong>, our talented team is dedicated to helping you look and feel your best on every occasion, especially your special day. We also offer <strong className="text-slate-900">expert henna artistry, professional eyebrow shaping and styling, hair removal, rejuvenation treatments, advanced aesthetic services, and PRP treatments</strong> to enhance your natural beauty.
+                    From beautiful hairstyles and expert hair care to{" "}
+                    <strong className="text-slate-900">
+                      professional make-up and stunning bridal make-up
+                    </strong>
+                    , our talented team is dedicated to helping you look and
+                    feel your best on every occasion, especially your special
+                    day. We also offer{" "}
+                    <strong className="text-slate-900">
+                      expert henna artistry, professional eyebrow shaping and
+                      styling, hair removal, rejuvenation treatments, advanced
+                      aesthetic services, and PRP treatments
+                    </strong>{" "}
+                    to enhance your natural beauty.
                   </p>
 
                   <div className="p-5 rounded-xl bg-[#f0f2fa] border-l-4 border-[#1a237e] text-slate-900">
                     <p className="italic font-medium text-sm sm:text-base leading-relaxed text-[#0d1242]">
-                      &ldquo;We believe every client deserves to feel valued, listened to, and cared for. That’s why we focus on attention to detail, a personal approach, and creating an experience that leaves you feeling refreshed, confident, and radiant.&rdquo;
+                      &ldquo;We believe every client deserves to feel valued,
+                      listened to, and cared for. That’s why we focus on
+                      attention to detail, a personal approach, and creating an
+                      experience that leaves you feeling refreshed, confident,
+                      and radiant.&rdquo;
                     </p>
                   </div>
 
                   <p>
-                    At Fami Hair &amp; Beauty Salon, your beauty journey is important to us. Whether you’re visiting for a fresh new hairstyle, bridal make-up for your special day, beautiful occasion make-up, intricate henna designs, perfectly shaped eyebrows, smooth skin through hair removal, or rejuvenating aesthetic treatments, we look forward to welcoming you.
+                    At Fami Hair &amp; Beauty Salon, your beauty journey is
+                    important to us. Whether you’re visiting for a fresh new
+                    hairstyle, bridal make-up for your special day, beautiful
+                    occasion make-up, intricate henna designs, perfectly shaped
+                    eyebrows, smooth skin through hair removal, or rejuvenating
+                    aesthetic treatments, we look forward to welcoming you.
                   </p>
 
                   <p className="font-heading text-lg font-bold text-[#d81b60] italic pt-1">
-                    Fami Hair &amp; Beauty Salon — Enhancing Your Beauty, Inspiring Your Confidence.
+                    Fami Hair &amp; Beauty Salon Enhancing Your Beauty,
+                    Inspiring Your Confidence.
                   </p>
                 </div>
               </div>
@@ -210,10 +265,17 @@ export default function AboutPage() {
                     Farzana (Fami)
                   </h3>
                   <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                    With over 15 years of distinguished experience in beauty therapy and clinical aesthetics, Farzana founded Fami Hair &amp; Beauty Salon with a singular mission: to blend premium salon artistry with state-of-the-art non-surgical aesthetics under one roof.
+                    With over 15 years of distinguished experience in beauty
+                    therapy and clinical aesthetics, Farzana founded Fami Hair
+                    &amp; Beauty Salon with a singular mission: to blend premium
+                    salon artistry with state-of-the-art non-surgical aesthetics
+                    under one roof.
                   </p>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    Farzana personally oversees our advanced skincare, BioRepeel, Hydra Facial protocols, and bespoke bridal hair &amp; makeup artistry to ensure flawless standards and radiant client satisfaction.
+                    Farzana personally oversees our advanced skincare,
+                    BioRepeel, Hydra Facial protocols, and bespoke bridal hair
+                    &amp; makeup artistry to ensure flawless standards and
+                    radiant client satisfaction.
                   </p>
                   <div className="pt-2 flex items-center gap-4">
                     <Link
@@ -238,7 +300,8 @@ export default function AboutPage() {
                 Our Core Values &amp; Client Promise
               </h2>
               <p className="mt-2 text-sm text-slate-600">
-                Every appointment is crafted around safety, luxury comfort, and transformative results.
+                Every appointment is crafted around safety, luxury comfort, and
+                transformative results.
               </p>
             </div>
 
@@ -253,7 +316,9 @@ export default function AboutPage() {
                     <div className="w-12 h-12 rounded-xl bg-[#f0f2fa] border border-[#c5cae9] flex items-center justify-center text-[#1a237e] mb-4">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <h3 className="font-heading text-lg font-bold text-[#1a237e] mb-2">{val.title}</h3>
+                    <h3 className="font-heading text-lg font-bold text-[#1a237e] mb-2">
+                      {val.title}
+                    </h3>
                     <p className="text-xs sm:text-sm text-slate-600 leading-relaxed flex-1">
                       {val.description}
                     </p>

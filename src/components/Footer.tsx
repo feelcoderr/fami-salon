@@ -35,8 +35,9 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm text-slate-300 leading-relaxed">
-              At Fami Hair &amp; Beauty Salon, we believe that beauty is more than just appearance —
-              it&apos;s about confidence, self-care, and feeling your very best.
+              At Fami Hair &amp; Beauty Salon, we believe that beauty is more
+              than just appearance it&apos;s about confidence, self-care, and
+              feeling your very best.
             </p>
 
             <p className="text-xs text-pink-300 font-medium italic">
@@ -59,7 +60,10 @@ export default function Footer() {
                     <span>5.0</span>
                     <div className="flex text-amber-500">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="w-3 h-3 fill-amber-500 text-amber-500" />
+                        <Star
+                          key={i}
+                          className="w-3 h-3 fill-amber-500 text-amber-500"
+                        />
                       ))}
                     </div>
                   </div>
@@ -81,22 +85,34 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-slate-300">
               <li>
-                <Link href="/" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/about"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/services"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   All Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/contact"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Contact &amp; Booking
                 </Link>
               </li>
@@ -113,32 +129,50 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-sm text-slate-300">
               <li>
-                <Link href="/services/hair" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/services/hair"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Hair Styling &amp; Colour
                 </Link>
               </li>
               <li>
-                <Link href="/services/facials" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/services/facials"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Facials &amp; Skin Care
                 </Link>
               </li>
               <li>
-                <Link href="/services/nails" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/services/nails"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Nails &amp; Shellac
                 </Link>
               </li>
               <li>
-                <Link href="/services/massages-makeup" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/services/massages-makeup"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Massage &amp; Make-Up
                 </Link>
               </li>
               <li>
-                <Link href="/services/laser-hair-removal" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/services/laser-hair-removal"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Laser Hair Removal
                 </Link>
               </li>
               <li>
-                <Link href="/services/microneedling-prp" className="hover:text-pink-300 transition-colors cursor-pointer">
+                <Link
+                  href="/services/microneedling-prp"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
                   Microneedling &amp; PRP
                 </Link>
               </li>
@@ -160,21 +194,31 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-pink-400 shrink-0" />
-                <a href="tel:+447000000000" className="hover:text-white transition-colors">
+                <a
+                  href="tel:+447000000000"
+                  className="hover:text-white transition-colors"
+                >
                   +44 7000 000000
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-pink-400 shrink-0" />
-                <a href="mailto:info@famihairsalon.com" className="hover:text-white transition-colors">
+                <a
+                  href="mailto:info@famihairsalon.com"
+                  className="hover:text-white transition-colors"
+                >
                   info@famihairsalon.com
                 </a>
               </div>
               <div className="flex items-start gap-2.5 pt-1">
                 <Clock className="w-4 h-4 text-pink-400 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-white font-medium text-xs">Mon – Sat: 9:30 AM – 6:30 PM</p>
-                  <p className="text-pink-300 font-medium text-xs mt-1">Sunday: Closed</p>
+                  <p className="text-white font-medium text-xs">
+                    Mon – Sat: 9:30 AM – 6:30 PM
+                  </p>
+                  <p className="text-pink-300 font-medium text-xs mt-1">
+                    Sunday: Closed
+                  </p>
                 </div>
               </div>
               <div className="pt-2">
@@ -191,10 +235,16 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-          <p>&copy; {currentYear} Fami Hair &amp; Beauty Salon. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} Fami Hair &amp; Beauty Salon. All rights
+            reserved.
+          </p>
           <div className="flex items-center gap-2 text-slate-300">
             <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-            <span>Rated 5.0 on Google &bull; Professional Hair, Beauty, Henna &amp; Aesthetics</span>
+            <span>
+              Rated 5.0 on Google &bull; Professional Hair, Beauty, Henna &amp;
+              Aesthetics
+            </span>
           </div>
         </div>
       </div>
