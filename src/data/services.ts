@@ -670,7 +670,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Henna and bridal mehndi artistry at Fami Salon: intricate bridal henna packages, party mehndi, Arabic and traditional motifs using 100% organic natural henna.",
     icon: "Flower2",
-    image: "/images/services/henna.jpg",
+    image: "/images/services/service-henna.jpg",
     tables: [
       {
         title: "Bridal Henna Packages",
