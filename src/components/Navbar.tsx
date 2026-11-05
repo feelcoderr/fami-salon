@@ -18,6 +18,7 @@ const navLinks = [
       { label: "Threading & Waxing", href: "/services/threading-waxing" },
       { label: "Lashes & Brows", href: "/services/eyelash-extensions" },
       { label: "Massage & Makeup", href: "/services/massages-makeup" },
+      { label: "Henna Artistry", href: "/services/henna" },
       { label: "Laser Hair Removal", href: "/services/laser-hair-removal" },
       { label: "Microneedling & PRP", href: "/services/microneedling-prp" },
       { label: "Hydra Facial & BioRepeel", href: "/services/microdermabrasion-hydrafacial" },
@@ -38,37 +39,38 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Clock className="w-3.5 h-3.5 text-pink-300" />
             <span className="hidden sm:inline">
-              Mon – Sat: 9:30 AM – 6:30 PM &bull; Sunday: Closed
+              Mon – Sat: 10:00 AM – 7:00 PM &bull; Sunday: Closed
             </span>
-            <span className="sm:hidden">Mon – Sat: 9:30 AM – 6:30 PM</span>
+            <span className="sm:hidden">Mon – Sat: 10:00 AM – 7:00 PM</span>
           </div>
           <a
-            href="tel:+447000000000"
+            href="tel:+447788638004"
             className="flex items-center gap-2 font-medium hover:text-pink-200 transition-colors cursor-pointer"
           >
             <Phone className="w-3.5 h-3.5 text-pink-300" />
-            <span>Call: +44 7000 000000</span>
+            <span>Call: +44 7788 638004</span>
           </a>
         </div>
       </div>
 
       {/* Main Nav */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 cursor-pointer">
-          <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#d81b60] shrink-0">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-22 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-3.5 sm:gap-4 cursor-pointer group">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden border-2 border-[#d81b60] shadow-md shrink-0 bg-white group-hover:scale-105 transition-transform">
             <Image
-              src="/images/fami-logo.jpg"
+              src="/images/fami-logo.png"
               alt="Fami Hair & Beauty Salon Logo"
               fill
-              className="object-cover"
+              sizes="64px"
+              className="object-contain p-0.5"
               priority
             />
           </div>
-          <div>
-            <span className="font-heading text-xl sm:text-2xl font-bold text-[#1a237e] block leading-none">
+          <div className="flex flex-col justify-center">
+            <span className="font-heading text-2xl sm:text-3xl font-bold text-[#1a237e] tracking-tight leading-none group-hover:text-[#121858] transition-colors">
               FAMI
             </span>
-            <span className="text-[10px] sm:text-xs font-semibold uppercase tracking-widest text-[#d81b60] block mt-0.5">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#d81b60] block mt-1">
               Hair &amp; Beauty Salon
             </span>
           </div>

@@ -23,30 +23,32 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://famihairsalon.com"),
+  metadataBase: new URL("https://famihairandbeautysalon.co.uk"),
   title: {
     default:
       "Fami Hair & Beauty Salon | Professional Hair, Bridal Makeup, Henna & Aesthetic Treatments",
     template: "%s | Fami Hair & Beauty Salon",
   },
   description:
-    "Fami Hair & Beauty Salon offers professional hair styling, bridal make-up, henna artistry, eyebrow services, hair removal, skin rejuvenation, and advanced PRP treatments in a welcoming environment.",
+    "Fami Hair & Beauty Salon at 79 Belgrave Rd, Ilford offers professional hair styling, bridal make-up, henna artistry, eyebrow services, hair removal, skin rejuvenation, and advanced PRP treatments.",
   keywords: [
-    "hair salon",
-    "beauty salon",
-    "bridal makeup",
+    "hair salon Ilford",
+    "beauty salon Ilford",
+    "bridal makeup Ilford",
     "henna artistry",
+    "bridal mehndi",
     "eyebrow threading",
     "hair removal",
     "PRP treatment",
     "skin rejuvenation",
+    "hydra facial",
     "advanced aesthetics",
   ],
   openGraph: {
     title: "Fami Hair & Beauty Salon",
     description:
-      "Professional hair, bridal make-up, henna artistry, and advanced aesthetic treatments.",
-    url: "https://famihairsalon.com",
+      "Professional hair, bridal make-up, henna artistry, and advanced aesthetic treatments at 79 Belgrave Rd, Ilford.",
+    url: "https://famihairandbeautysalon.co.uk",
     siteName: "Fami Hair & Beauty Salon",
     locale: "en_GB",
     type: "website",

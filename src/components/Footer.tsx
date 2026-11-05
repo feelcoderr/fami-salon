@@ -12,23 +12,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
           {/* Brand & Logo + Google Rating Badge */}
           <div className="lg:col-span-4 space-y-5">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-[#d81b60] shrink-0">
+            <Link href="/" className="flex items-center gap-3.5 group">
+              <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#d81b60] shrink-0 bg-white shadow-md">
                 <Image
-                  src="/images/fami-logo.jpg"
+                  src="/images/fami-logo.png"
                   alt="Fami Hair & Beauty Salon Logo"
                   fill
-                  className="object-cover"
+                  sizes="56px"
+                  className="object-contain p-0.5"
                 />
               </div>
               <div>
                 <span
                   style={{ color: "#ffffff" }}
-                  className="font-heading text-xl font-bold !text-white block leading-tight"
+                  className="font-heading text-2xl font-bold !text-white block leading-tight"
                 >
                   FAMI
                 </span>
-                <span className="text-[11px] font-semibold uppercase tracking-widest text-[#d81b60] block">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#d81b60] block mt-0.5">
                   Hair &amp; Beauty Salon
                 </span>
               </div>
@@ -162,6 +163,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/services/henna"
+                  className="hover:text-pink-300 transition-colors cursor-pointer"
+                >
+                  Henna Artistry (Mehndi)
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/services/laser-hair-removal"
                   className="hover:text-pink-300 transition-colors cursor-pointer"
                 >
@@ -190,31 +199,31 @@ export default function Footer() {
             <div className="space-y-3 text-sm text-slate-300">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-pink-400 shrink-0 mt-0.5" />
-                <span>High Street Studio, City Centre</span>
+                <span>79 Belgrave Rd, Ilford IG1 3AL, UK</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-pink-400 shrink-0" />
                 <a
-                  href="tel:+447000000000"
+                  href="tel:+447788638004"
                   className="hover:text-white transition-colors"
                 >
-                  +44 7000 000000
+                  +44 7788 638004
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-pink-400 shrink-0" />
                 <a
-                  href="mailto:info@famihairsalon.com"
-                  className="hover:text-white transition-colors"
+                  href="mailto:info@famihairandbeautysalon.co.uk"
+                  className="hover:text-white transition-colors break-all"
                 >
-                  info@famihairsalon.com
+                  info@famihairandbeautysalon.co.uk
                 </a>
               </div>
               <div className="flex items-start gap-2.5 pt-1">
                 <Clock className="w-4 h-4 text-pink-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="text-white font-medium text-xs">
-                    Mon – Sat: 9:30 AM – 6:30 PM
+                    Mon – Sat: 10:00 AM – 7:00 PM
                   </p>
                   <p className="text-pink-300 font-medium text-xs mt-1">
                     Sunday: Closed

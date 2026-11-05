@@ -519,7 +519,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Eyelash extensions at Fami Salon: individual, hybrid, 3D volume lash sets, lash tinting, brow tinting, brow lamination, henna brows, and ear/nose piercing.",
     icon: "Eye",
     image:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Eyelash Extensions",
@@ -580,7 +580,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Massage and make-up services at Fami Salon: full body, hot stone, aromatherapy, bamboo, cupping, lymphatic drainage, deep tissue massage, party and bridal makeup.",
     icon: "Heart",
     image:
-      "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Massages",
@@ -660,6 +660,100 @@ export const serviceCategories: ServiceCategory[] = [
           },
         ],
         note: "Make-up prices are subject to change after final consultation with the makeup artist. Terms and conditions apply.",
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────
+  // 7. HENNA ARTISTRY (MEHNDI)
+  // ─────────────────────────────────────────────────────
+  {
+    slug: "henna",
+    title: "Henna Artistry (Mehndi)",
+    shortTitle: "Henna Artistry",
+    description:
+      "Expert 100% organic natural henna designs, bespoke bridal mehndi, festive party henna, and Arabic & Indian motifs.",
+    metaDescription:
+      "Henna and bridal mehndi artistry at Fami Salon: intricate bridal henna packages, party mehndi, Arabic and traditional motifs using 100% organic natural henna.",
+    icon: "Flower2",
+    image:
+      "https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=800&h=600&fit=crop",
+    tables: [
+      {
+        title: "Bridal Henna Packages",
+        items: [
+          {
+            name: "Signature Bridal Henna (Both Hands to Elbows & Feet)",
+            duration: "4 - 5 hrs",
+            price: "£180.00 onwards",
+          },
+          {
+            name: "Deluxe Full Bridal Mehndi (Hands, Arms to Elbows & Full Feet/Ankles)",
+            duration: "5 - 6 hrs",
+            price: "£250.00 onwards",
+          },
+          {
+            name: "Minimalist Bridal Mehndi (Hands to Wrists & Feet Bands)",
+            duration: "2.5 - 3 hrs",
+            price: "£120.00 onwards",
+          },
+          {
+            name: "Bridal Henna Consultation & Trial Pattern",
+            duration: "45 min",
+            price: "£35.00",
+          },
+        ],
+        note: "Bridal appointments include fresh organic natural henna cones with aftercare lemon-sugar sealant and post-treatment stain guide.",
+      },
+      {
+        title: "Occasional, Party & Guest Henna",
+        items: [
+          {
+            name: "Single Side Hand Design (Simple Arabic / Floral)",
+            duration: "15 min",
+            price: "£10.00 onwards",
+          },
+          {
+            name: "Both Sides Hand Design (Palm & Back of Hand)",
+            duration: "30 min",
+            price: "£20.00 onwards",
+          },
+          {
+            name: "Hands Up to Wrist (Both Sides - Intricate Pattern)",
+            duration: "45 min",
+            price: "£35.00 onwards",
+          },
+          {
+            name: "Forearm Extension (Up to Elbows - Per Arm)",
+            duration: "30 min",
+            price: "£25.00 onwards",
+          },
+          {
+            name: "Feet Henna (Top of Feet & Ankles)",
+            duration: "30 min",
+            price: "£25.00 onwards",
+          },
+          {
+            name: "Party / Sangeet Group Booking (Per Hour)",
+            duration: "1 hr",
+            price: "£65.00 / hr",
+          },
+        ],
+      },
+      {
+        title: "Henna Brows & Tinting",
+        items: [
+          {
+            name: "Henna Brow Sculpting & Tint",
+            duration: "20 min",
+            price: "£15.00",
+          },
+          {
+            name: "Henna Brows + Precision Threading Combo",
+            duration: "35 min",
+            price: "£18.00",
+          },
+        ],
       },
     ],
   },

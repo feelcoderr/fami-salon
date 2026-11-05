@@ -11,7 +11,7 @@ import { Sparkles, Calendar, Phone, CheckCircle2, ShieldCheck, Clock } from "luc
 export const metadata: Metadata = {
   title: "Treatments & Services Menu | Fami Hair & Beauty Salon",
   description:
-    "Explore our full service menu: Hair care, Facials, Nails, Threading & Waxing, Eyelashes, Massages, Bridal Make-up, Laser Hair Removal, Microneedling & PRP.",
+    "Explore our full service menu: Hair care, Facials, Nails, Threading & Waxing, Eyelashes, Massages, Bridal Make-up, Henna Artistry, Laser Hair Removal, Microneedling & PRP.",
 };
 
 const popularPackages = [
@@ -65,7 +65,7 @@ export default function ServicesPage() {
             <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fdf2f6] border border-[#f8bbd0] text-xs font-bold text-[#d81b60] uppercase tracking-wider mb-3">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>9 Treatment Categories</span>
+                <span>10 Treatment Categories</span>
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a237e] tracking-tight">
                 Browse By Treatment Category

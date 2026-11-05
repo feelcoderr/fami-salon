@@ -143,11 +143,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                       <span>Book Online Now</span>
                     </Link>
                     <a
-                      href="tel:+447000000000"
+                      href="tel:+447788638004"
                       className="flex items-center justify-center gap-2 w-full py-3 bg-white hover:bg-slate-100 text-[#1a237e] text-xs font-semibold rounded-lg transition-colors cursor-pointer"
                     >
                       <Phone className="w-4 h-4" />
-                      <span>Call +44 7000 000000</span>
+                      <span>Call +44 7788 638004</span>
                     </a>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                       href="/services"
                       className="text-xs font-bold text-[#d81b60] hover:text-[#ad1457] inline-flex items-center gap-1 cursor-pointer"
                     >
-                      <span>View All 9 Categories</span>
+                      <span>View All 10 Categories</span>
                       <ChevronRight className="w-3 h-3" />
                     </Link>
                   </div>

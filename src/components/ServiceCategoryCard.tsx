@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ChevronRight, Scissors, Sparkles, Hand, Flame, Eye, Heart, Zap, Activity, Droplets } from "lucide-react";
+import { ChevronRight, Scissors, Sparkles, Hand, Flame, Eye, Heart, Zap, Activity, Droplets, Flower2 } from "lucide-react";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  Scissors, Sparkles, Hand, Flame, Eye, Heart, Zap, Activity, Droplets,
+  Scissors, Sparkles, Hand, Flame, Eye, Heart, Zap, Activity, Droplets, Flower2,
 };
 
 interface ServiceCategoryCardProps {

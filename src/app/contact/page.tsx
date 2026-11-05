@@ -77,7 +77,7 @@ export default function ContactPage() {
                       <h4 className="font-bold text-slate-900 text-sm">Salon Studio Location</h4>
                       <p className="text-xs sm:text-sm text-slate-600 mt-0.5 leading-relaxed">
                         Fami Hair &amp; Beauty Salon<br />
-                        High Street Studio, City Centre
+                        79 Belgrave Rd, Ilford IG1 3AL, UK
                       </p>
                     </div>
                   </div>
@@ -90,10 +90,10 @@ export default function ContactPage() {
                       <h4 className="font-bold text-slate-900 text-sm">Phone Appointments</h4>
                       <p className="text-xs text-slate-500 mt-0.5">Direct line for bookings &amp; enquiries</p>
                       <a
-                        href="tel:+447000000000"
+                        href="tel:+447788638004"
                         className="text-xs sm:text-sm font-bold text-[#1a237e] hover:text-[#d81b60] transition-colors mt-1 inline-block"
                       >
-                        +44 7000 000000
+                        +44 7788 638004
                       </a>
                     </div>
                   </div>
@@ -106,10 +106,10 @@ export default function ContactPage() {
                       <h4 className="font-bold text-slate-900 text-sm">Email Inquiries</h4>
                       <p className="text-xs text-slate-500 mt-0.5">Bridal trials &amp; aesthetic consultations</p>
                       <a
-                        href="mailto:info@famihairsalon.com"
-                        className="text-xs sm:text-sm font-bold text-[#1a237e] hover:text-[#d81b60] transition-colors mt-1 inline-block"
+                        href="mailto:info@famihairandbeautysalon.co.uk"
+                        className="text-xs sm:text-sm font-bold text-[#1a237e] hover:text-[#d81b60] transition-colors mt-1 inline-block break-all"
                       >
-                        info@famihairsalon.com
+                        info@famihairandbeautysalon.co.uk
                       </a>
                     </div>
                   </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-bold text-slate-900 text-sm">Opening Hours</h4>
                       <div className="text-xs text-slate-600 mt-1 space-y-0.5">
-                        <p><strong className="text-slate-800">Monday – Saturday:</strong> 9:30 AM – 6:30 PM</p>
+                        <p><strong className="text-slate-800">Monday – Saturday:</strong> 10:00 AM – 7:00 PM</p>
                         <p><strong className="text-[#d81b60] font-semibold">Sunday:</strong> Closed</p>
                       </div>
                     </div>

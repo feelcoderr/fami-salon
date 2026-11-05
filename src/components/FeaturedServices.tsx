@@ -32,13 +32,13 @@ export default function FeaturedServices() {
               href="/services"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a237e] hover:bg-[#121858] text-white text-sm font-semibold rounded-lg transition-colors cursor-pointer shadow-sm"
             >
-              <span>View All 9 Categories</span>
+              <span>View All 10 Categories</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
 
-        {/* 9 Category Grid */}
+        {/* 10 Category Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {serviceCategories.map((category) => (
             <ServiceCategoryCard

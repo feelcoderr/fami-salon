@@ -72,7 +72,7 @@ export default function ContactSection() {
                     <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
                       Fami Hair &amp; Beauty Salon
                       <br />
-                      High Street Luxury Studio, City Centre
+                      79 Belgrave Rd, Ilford IG1 3AL, UK
                     </p>
                   </div>
                 </div>
@@ -84,10 +84,10 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-bold text-slate-900">Phone Consultation</h4>
                     <a
-                      href="tel:+447000000000"
+                      href="tel:+447788638004"
                       className="text-slate-600 hover:text-[#1a237e] font-medium text-xs sm:text-sm mt-0.5 block transition-colors cursor-pointer"
                     >
-                      +44 7000 000000
+                      +44 7788 638004
                     </a>
                   </div>
                 </div>
@@ -99,10 +99,10 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-bold text-slate-900">Email Address</h4>
                     <a
-                      href="mailto:info@famihairsalon.com"
-                      className="text-slate-600 hover:text-[#1a237e] font-medium text-xs sm:text-sm mt-0.5 block transition-colors cursor-pointer"
+                      href="mailto:info@famihairandbeautysalon.co.uk"
+                      className="text-slate-600 hover:text-[#1a237e] font-medium text-xs sm:text-sm mt-0.5 block transition-colors cursor-pointer break-all"
                     >
-                      info@famihairsalon.com
+                      info@famihairandbeautysalon.co.uk
                     </a>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-bold text-slate-900">Opening Hours</h4>
                     <p className="text-slate-600 text-xs sm:text-sm mt-0.5">
-                      Mon – Sat: 9:30 AM – 6:30 PM
+                      Mon – Sat: 10:00 AM – 7:00 PM
                       <br />
                       <span className="text-[#d81b60] font-semibold">Sunday: Closed</span>
                     </p>
@@ -125,7 +125,7 @@ export default function ContactSection() {
               {/* Instant WhatsApp Quick Action */}
               <div className="pt-4 border-t border-slate-100">
                 <a
-                  href="https://wa.me/?text=Hello%20Fami%20Hair%20%26%20Beauty%20Salon,%20I%20would%20like%20to%20enquire%20about%20booking%20an%20appointment."
+                  href="https://wa.me/447788638004?text=Hello%20Fami%20Hair%20%26%20Beauty%20Salon,%20I%20would%20like%20to%20enquire%20about%20booking%20an%20appointment."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2.5 w-full py-3 bg-[#1a237e] hover:bg-[#121858] text-white text-sm font-semibold rounded-lg transition-colors cursor-pointer"

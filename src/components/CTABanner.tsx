@@ -43,11 +43,11 @@ export default function CTABanner() {
             <span>Book Your Appointment</span>
           </a>
           <a
-            href="tel:+447000000000"
+            href="tel:+447788638004"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-white hover:bg-slate-100 text-[#1a237e] font-semibold text-sm rounded-lg transition-colors cursor-pointer"
           >
             <Phone className="w-4 h-4" />
-            <span>Call +44 7000 000000</span>
+            <span>Call +44 7788 638004</span>
           </a>
         </div>
       </div>
