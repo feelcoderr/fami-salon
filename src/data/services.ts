@@ -145,8 +145,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Professional facial treatments at Fami Salon: deep cleansing, gold, herbal, acne, lifting, skin whitening, diamond, carbon, dermaplaning, bleach, and body polishing.",
     icon: "Sparkles",
-    image:
-      "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=800&h=600&fit=crop",
+    image: "/public/images/FacialsCare.jpg",
     tables: [
       {
         title: "Facials",
@@ -403,8 +402,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Threading and waxing services at Fami Salon: eyebrow threading, full face threading, body waxing, bikini waxing, Hollywood waxing, and Brazilian waxing.",
     icon: "Flame",
-    image:
-      "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800&h=600&fit=crop",
+    image: "/public/images/ThreadingWaxing.jpg",
     tables: [
       {
         title: "Threading",
@@ -518,8 +516,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Eyelash extensions at Fami Salon: individual, hybrid, 3D volume lash sets, lash tinting, brow tinting, brow lamination, henna brows, and ear/nose piercing.",
     icon: "Eye",
-    image:
-      "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=800&h=600&fit=crop",
+    image: "/public/images/eyelash-extensions.jpg",
     tables: [
       {
         title: "Eyelash Extensions",
@@ -676,8 +673,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Henna and bridal mehndi artistry at Fami Salon: intricate bridal henna packages, party mehndi, Arabic and traditional motifs using 100% organic natural henna.",
     icon: "Flower2",
-    image:
-      "https://images.unsplash.com/photo-1596178060671-7a80dc8059ea?w=800&h=600&fit=crop",
+    image: "/public/images/heena.jpg",
     tables: [
       {
         title: "Bridal Henna Packages",
@@ -770,8 +766,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Laser hair removal at Fami Salon: IPL and SHR technology for face, arms, legs, underarms, bikini, and full body with affordable per-session and package pricing.",
     icon: "Zap",
-    image:
-      "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=800&h=600&fit=crop",
+    image: "/public/images/laser-hair-removal.jpg",
     tables: [
       {
         title: "Laser Hair Removal - IPL",
