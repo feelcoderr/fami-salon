@@ -41,7 +41,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Professional hair services at Fami Salon: precision cuts, full head colour, highlights, balayage, ombre, bridal hairstyles, blow dry, and deep conditioning treatments.",
     icon: "Scissors",
     image:
-      "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Hair Services",
@@ -146,7 +146,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Professional facial treatments at Fami Salon: deep cleansing, gold, herbal, acne, lifting, skin whitening, diamond, carbon, dermaplaning, bleach, and body polishing.",
     icon: "Sparkles",
     image:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1576426863848-c21f53c60b19?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Facials",
@@ -279,7 +279,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Nail services at Fami Salon: manicure, pedicure, spa pedicure with paraffin wax, shellac, acrylic extensions, gel extensions, dipping powder, and nail polish.",
     icon: "Hand",
     image:
-      "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Nail Services",
@@ -404,7 +404,7 @@ export const serviceCategories: ServiceCategory[] = [
       "Threading and waxing services at Fami Salon: eyebrow threading, full face threading, body waxing, bikini waxing, Hollywood waxing, and Brazilian waxing.",
     icon: "Flame",
     image:
-      "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800&h=600&fit=crop",
     tables: [
       {
         title: "Threading",
