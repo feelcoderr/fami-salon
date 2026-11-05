@@ -62,14 +62,14 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-3.5 sm:gap-4 cursor-pointer group"
         >
-          <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full overflow-hidden shadow-md shrink-0 bg-white group-hover:scale-105 transition-transform">
+          <div className="relative w-14 h-14 sm:w-16 sm:h-16 shrink-0 group-hover:scale-105 transition-transform drop-shadow-sm">
             <Image
               src="/images/fami-logo.png"
               alt="Fami Hair & Beauty Salon Logo"
               fill
-              sizes="64px"
-              className="object-contain p-0.5"
+              className="object-contain"
               priority
+              unoptimized
             />
           </div>
           <div className="flex flex-col justify-center">

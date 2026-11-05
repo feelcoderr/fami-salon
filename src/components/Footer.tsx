@@ -13,13 +13,13 @@ export default function Footer() {
           {/* Brand & Logo + Google Rating Badge */}
           <div className="lg:col-span-4 space-y-5">
             <Link href="/" className="flex items-center gap-3.5 group">
-              <div className="relative w-14 h-14 rounded-full overflow-hidden border-2 border-[#d81b60] shrink-0 bg-white shadow-md">
+              <div className="relative w-14 h-14 rounded-full bg-white shadow-md shrink-0 p-0.5 border border-white/20">
                 <Image
                   src="/images/fami-logo.png"
                   alt="Fami Hair & Beauty Salon Logo"
                   fill
-                  sizes="56px"
-                  className="object-contain p-0.5"
+                  className="object-contain"
+                  unoptimized
                 />
               </div>
               <div>
