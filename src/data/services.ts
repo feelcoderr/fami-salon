@@ -40,8 +40,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Professional hair services at Fami Salon: precision cuts, full head colour, highlights, balayage, ombre, bridal hairstyles, blow dry, and deep conditioning treatments.",
     icon: "Scissors",
-    image:
-      "/images/services/service-hair.jpg",
+    image: "/images/services/service-hair.jpg",
     tables: [
       {
         title: "Hair Services",
@@ -277,8 +276,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Nail services at Fami Salon: manicure, pedicure, spa pedicure with paraffin wax, shellac, acrylic extensions, gel extensions, dipping powder, and nail polish.",
     icon: "Hand",
-    image:
-      "/images/services/service-nails.jpg",
+    image: "/images/services/service-nails.jpg",
     tables: [
       {
         title: "Nail Services",
@@ -576,8 +574,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Massage and make-up services at Fami Salon: full body, hot stone, aromatherapy, bamboo, cupping, lymphatic drainage, deep tissue massage, party and bridal makeup.",
     icon: "Heart",
-    image:
-      "/images/services/service-massages.jpg",
+    image: "/images/services/service-massages.jpg",
     tables: [
       {
         title: "Massages",
@@ -673,7 +670,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Henna and bridal mehndi artistry at Fami Salon: intricate bridal henna packages, party mehndi, Arabic and traditional motifs using 100% organic natural henna.",
     icon: "Flower2",
-    image: "/images/services/service-henna.jpg",
+    image: "/images/services/henna.jpg",
     tables: [
       {
         title: "Bridal Henna Packages",
@@ -963,8 +960,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Advanced skin treatments at Fami Salon: microneedling, radiofrequency face and body, PRP vampire facial, PRP hair loss treatment, BB Glow, and acid peeling.",
     icon: "Activity",
-    image:
-      "/images/services/service-microneedling.jpg",
+    image: "/images/services/service-microneedling.jpg",
     tables: [
       {
         title: "Microneedling",
@@ -1057,8 +1053,7 @@ export const serviceCategories: ServiceCategory[] = [
     metaDescription:
       "Microdermabrasion, Hydra Facial, and BioRepeel at Fami Salon: tester facials, course packages, hydra facial with LED, and BioRepeel for face, neck, and body.",
     icon: "Droplets",
-    image:
-      "/images/services/service-hydrafacial.jpg",
+    image: "/images/services/service-hydrafacial.jpg",
     tables: [
       {
         title: "Microdermabrasion for Face",
