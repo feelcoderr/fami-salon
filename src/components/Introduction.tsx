@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import {
   CheckCircle2,
@@ -10,48 +9,42 @@ import {
   Award,
   ShieldCheck,
   ChevronRight,
+  Clock,
 } from "lucide-react";
 
-const teamPhotos = [
-  {
-    id: "candid",
-    label: "Team Collaboration",
-    src: "/images/fami-team-candid.jpg",
-    alt: "Fami Hair and Beauty Salon team smiling and consulting together",
-    caption: "Our caring team of passionate stylists and beauty therapists",
-  },
-  {
-    id: "studio",
-    label: "Official Specialists",
-    src: "/images/fami-team-studio.png",
-    alt: "Fami Hair & Beauty Salon certified professional team",
-    caption:
-      "Fully qualified experts in hair, makeup, henna & advanced aesthetics",
-  },
-  {
-    id: "celebration",
-    label: "Salon Culture",
-    src: "/images/fami-team-salon.jpg",
-    alt: "Fami Hair and Beauty Salon festive celebration and creative artistry",
-    caption:
-      "A welcoming, joyful, and creative salon atmosphere for all clients",
-  },
-];
+const salonCulturePhoto = {
+  src: "/images/fami-team-salon.jpg",
+  alt: "Fami Hair and Beauty Salon welcoming culture and team celebration",
+  caption: "A welcoming, joyful, and creative salon atmosphere for all clients",
+  label: "Salon Culture",
+};
 
-const highlightedTreatments = [
-  "Hair Styling, Precision Cuts & Colour",
-  "Professional & Bespoke Bridal Make-Up",
-  "100% Organic Henna Artistry (Mehndi)",
-  "Eyebrow Shaping, Threading & Styling",
-  "Smooth Waxing & Gentle Hair Removal",
-  "Skin Rejuvenation & Glow Facials",
-  "Advanced Aesthetic & Anti-Ageing Services",
-  "PRP Hair Restoration & Vampire Facials",
+interface TreatmentItem {
+  name: string;
+  featured?: boolean;
+  badge?: string;
+  description?: string;
+}
+
+const highlightedTreatments: TreatmentItem[] = [
+  {
+    name: "Hydra Facial (Deep Cleanse, Hydration & LED)",
+    featured: true,
+    badge: "Featured Glow",
+    description:
+      "Vortex deep-pore cleansing, gentle exfoliation, active hydration & LED therapy",
+  },
+  { name: "Hair Styling, Precision Cuts & Colour" },
+  { name: "Professional & Bespoke Bridal Make-Up" },
+  { name: "100% Organic Henna Artistry (Mehndi)" },
+  { name: "Eyebrow Shaping, Threading & Styling" },
+  { name: "Smooth Waxing & Gentle Hair Removal" },
+  { name: "Skin Rejuvenation & Glow Facials" },
+  { name: "Advanced Aesthetic & Anti-Ageing Services" },
+  { name: "PRP Hair Restoration & Vampire Facials" },
 ];
 
 export default function Introduction() {
-  const [activePhoto, setActivePhoto] = useState(0);
-
   return (
     <section
       id="about"
@@ -73,16 +66,16 @@ export default function Introduction() {
           </p>
         </div>
 
-        {/* Main Grid: Visual Team Showcase + Official Story */}
+        {/* Main Grid: Authentic Visual Showcase + Official Story */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
-          {/* Left Column (5 cols): Authentic Team Showcase */}
+          {/* Left Column (5 cols): Authentic Visual & Salon Standards */}
           <div className="lg:col-span-5 space-y-6">
-            {/* Interactive Photo Frame */}
+            {/* Salon Atmosphere Photo Frame */}
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-50 group">
               <div className="relative aspect-[4/3] sm:aspect-[16/11] w-full">
                 <Image
-                  src={teamPhotos[activePhoto].src}
-                  alt={teamPhotos[activePhoto].alt}
+                  src={salonCulturePhoto.src}
+                  alt={salonCulturePhoto.alt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover transition-all duration-500"
@@ -93,53 +86,29 @@ export default function Introduction() {
               {/* Photo Caption Overlay */}
               <div className="p-3.5 bg-slate-900/90 text-white text-xs flex items-center justify-between border-t border-white/10">
                 <span className="truncate pr-2 font-medium">
-                  {teamPhotos[activePhoto].caption}
+                  {salonCulturePhoto.caption}
                 </span>
                 <span className="text-[10px] text-pink-300 font-bold uppercase shrink-0">
-                  {activePhoto + 1} / {teamPhotos.length}
+                  {salonCulturePhoto.label}
                 </span>
               </div>
             </div>
 
-            {/* Photo Selector Switcher */}
-            <div className="grid grid-cols-3 gap-2">
-              {teamPhotos.map((photo, idx) => (
-                <button
-                  key={photo.id}
-                  type="button"
-                  onClick={() => setActivePhoto(idx)}
-                  className={`px-2.5 py-2 rounded-lg text-xs font-semibold text-center transition-all cursor-pointer border ${
-                    activePhoto === idx
-                      ? "bg-[#1a237e] text-white border-[#1a237e] shadow-sm"
-                      : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50"
-                  }`}
-                >
-                  {photo.label}
-                </button>
-              ))}
-            </div>
-
-            {/* Founder Card Spotlight */}
-            <div className="p-4 sm:p-5 rounded-2xl bg-[#f0f2fa] border border-[#c5cae9] flex items-center gap-4 shadow-sm">
-              <div className="relative w-16 h-20 sm:w-20 sm:h-24 rounded-xl overflow-hidden border-2 border-[#1a237e] shrink-0 shadow">
-                <Image
-                  src="/images/fami-founder.jpg"
-                  alt="Farzana (Fami) - Founder & Lead Aesthetician"
-                  fill
-                  className="object-cover object-top"
-                />
+            {/* Salon Experience & Operating Standards */}
+            <div className="p-5 rounded-2xl bg-[#f0f2fa] border border-[#c5cae9] space-y-3 shadow-xs">
+              <div className="flex items-center gap-2 text-xs font-bold text-[#1a237e] uppercase tracking-wider">
+                <Sparkles className="w-4 h-4 text-[#d81b60]" />
+                <span>Salon Experience &amp; Standards</span>
               </div>
-              <div className="space-y-1">
-                <div className="inline-block px-2 py-0.5 rounded bg-white text-[#d81b60] text-[10px] font-bold uppercase tracking-wider border border-[#f8bbd0]">
-                  Founder &amp; Master Aesthetician
-                </div>
-                <h4 className="font-heading text-base sm:text-lg font-bold text-[#1a237e] leading-tight">
-                  Farzana (Fami)
-                </h4>
-                <p className="text-xs text-slate-600 leading-snug">
-                  15+ years passionate experience dedicated to bespoke bridal
-                  glam, hair artistry, and clinical aesthetics.
-                </p>
+              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Enjoy a welcoming, relaxing, and comfortable environment dedicated to your personalized beauty care, with medical-grade hygiene and sterilized instruments.
+              </p>
+              <div className="pt-2 border-t border-slate-200/80 flex items-center justify-between text-xs text-slate-600">
+                <span className="font-semibold text-[#1a237e] flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-[#1a237e]" />
+                  Mon – Sat: 10:00 AM – 7:00 PM
+                </span>
+                <span className="text-[#d81b60] font-bold">Sunday: Closed</span>
               </div>
             </div>
 
@@ -190,8 +159,8 @@ export default function Introduction() {
                 We are passionate about providing professional{" "}
                 <strong className="text-slate-900 font-semibold">
                   hair, beauty, make-up, bridal make-up, henna artistry, eyebrow
-                  services, hair removal, rejuvenation, advanced aesthetic, and
-                  PRP treatments
+                  services, hair removal, Hydra Facials, rejuvenation, advanced
+                  aesthetic, and PRP treatments
                 </strong>{" "}
                 in a welcoming, relaxing, and comfortable environment. Our aim
                 is to help every client look and feel confident through
@@ -208,9 +177,9 @@ export default function Introduction() {
                 your best on every occasion, especially your special day. We
                 also offer{" "}
                 <strong className="text-slate-900 font-semibold">
-                  expert henna artistry, professional eyebrow shaping and
-                  styling, hair removal, rejuvenation treatments, advanced
-                  aesthetic services, and PRP treatments
+                  clinical Hydra Facials, expert henna artistry, professional
+                  eyebrow shaping and styling, smooth hair removal, rejuvenation
+                  treatments, advanced aesthetic services, and PRP treatments
                 </strong>{" "}
                 to enhance your natural beauty.
               </p>
@@ -241,21 +210,53 @@ export default function Introduction() {
               </p>
             </div>
 
-            {/* Service Tags Grid */}
+            {/* Service Tags Grid with Highlighted Hydra Facial */}
             <div className="pt-2">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-                Treatments Tailored To You
-              </p>
+              <div className="flex items-center justify-between mb-3">
+                <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                  Treatments Tailored To You
+                </p>
+                <span className="text-[11px] font-semibold text-[#d81b60]">
+                  Bespoke Beauty Protocols
+                </span>
+              </div>
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                {highlightedTreatments.map((treatment) => (
-                  <div
-                    key={treatment}
-                    className="flex items-center gap-2 p-2 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800"
-                  >
-                    <CheckCircle2 className="w-4 h-4 text-[#d81b60] shrink-0" />
-                    <span>{treatment}</span>
-                  </div>
-                ))}
+                {highlightedTreatments.map((treatment) =>
+                  treatment.featured ? (
+                    <div
+                      key={treatment.name}
+                      className="sm:col-span-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3.5 rounded-xl bg-[#fdf2f6] border-2 border-[#d81b60] text-[#1a237e] shadow-sm ring-1 ring-[#d81b60]/20"
+                    >
+                      <div className="flex items-start sm:items-center gap-3">
+                        <div className="w-8 h-8 rounded-lg bg-[#d81b60] text-white flex items-center justify-center shrink-0 shadow-xs mt-0.5 sm:mt-0">
+                          <Sparkles className="w-4 h-4" />
+                        </div>
+                        <div>
+                          <span className="text-sm font-bold text-[#1a237e] block leading-tight">
+                            {treatment.name}
+                          </span>
+                          {treatment.description && (
+                            <span className="text-xs font-normal text-slate-600 block mt-0.5">
+                              {treatment.description}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <span className="self-start sm:self-center shrink-0 px-3 py-1 rounded-full bg-[#d81b60] text-white text-[11px] font-bold uppercase tracking-wider shadow-xs">
+                        {treatment.badge}
+                      </span>
+                    </div>
+                  ) : (
+                    <div
+                      key={treatment.name}
+                      className="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-xs font-medium text-slate-800 hover:border-slate-300 transition-colors"
+                    >
+                      <CheckCircle2 className="w-4 h-4 text-[#d81b60] shrink-0" />
+                      <span>{treatment.name}</span>
+                    </div>
+                  )
+                )}
               </div>
             </div>
 
